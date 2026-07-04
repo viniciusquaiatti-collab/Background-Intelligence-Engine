@@ -1,127 +1,124 @@
-# 🚀 Roadmap do Projeto
+# Project Roadmap
 
-## Fase 1
+## Phase 1: Foundation
 
-✅ Fundação
+Status: done
 
----
+- TypeScript
+- Fastify
+- Environment loading
+- `app.ts`
+- `server.ts`
+- `/health`
+- Git
+- Initial docs
 
-## Fase 2
+## Phase 2: Engineering Quality
 
-Arquitetura
+Status: done
 
-Documentação
+- ESLint
+- Prettier
+- EditorConfig
+- Husky
+- lint-staged
+- npm scripts
+- Conventional Commits
 
-Padrões
+## Phase 3: Tests
 
----
+Status: done
 
-## Fase 3
+- Vitest
+- Supertest
+- `/health` test
+- HTTP error tests
+- Test structure
 
-Qualidade
+## Phase 4: Observability
 
-ESLint
+Status: done
 
-Prettier
+- Structured logs
+- Request ID
+- Correlation ID
+- Global error handler
+- Not found handler
+- Startup banner
+- Standard API response envelope
 
-Husky
+## Phase 5: Database
 
-lint-staged
+Status: next
 
-Vitest
+- Docker Compose
+- PostgreSQL
+- Prisma
+- First migration
+- Database health check
 
----
+## Phase 6: Domain Model
 
-## Fase 4
+Status: pending
 
-Banco de Dados
+- BackgroundCheck
+- Protocol
+- Provider
+- Evidence
+- Risk
+- Report
+- Audit
 
-Docker
+## Phase 7: Engine
 
-PostgreSQL
+Status: pending
 
-Prisma
+- BackgroundCheckEngine
+- ProviderRegistry
+- ProviderOrchestrator
+- NormalizationEngine
+- EvidenceEngine
+- RiskEngine
+- ReportGenerator
 
-Migrações
+## Phase 8: Mock Providers
 
----
+Status: pending
 
-## Fase 5
+- MockIdentityProvider
+- MockJudicialProvider
+- MockComplianceProvider
+- MockCreditProvider
 
-Domínio
+## Phase 9: Real API
 
-Background Check
+Status: pending
 
-Protocol
+- `POST /v1/background-check`
+- `GET /v1/background-check/:protocol`
+- Request validation
+- Standard responses
+- Standard errors
 
-Identity
+## Phase 10: Security
 
-Risk
+Status: pending
 
-Evidence
+- API Key
+- Rate limit
+- Sensitive data masking
+- Audit trail
+- Future JWT
+- Future RBAC
 
-Report
+## Phase 11: Deploy
 
-Audit
+Status: pending
 
----
-
-## Fase 6
-
-Providers
-
-Receita Federal
-
-BrasilAPI
-
-Portal Transparência
-
-CNJ
-
-Tribunais
-
-SERPRO
-
----
-
-## Fase 7
-
-Risk Engine
-
-Motor de Regras
-
-Confidence Score
-
-Risk Score
-
----
-
-## Fase 8
-
-Segurança
-
-JWT
-
-API Keys
-
-RBAC
-
-Rate Limit
-
-Logs
-
----
-
-## Fase 9
-
-Deploy
-
-CI/CD
-
-Docker
-
-Cloud
-
-Monitoramento
-
-Backup
+- Docker
+- Runtime environment variables
+- Build
+- Start
+- Health checks
+- Logs
+- Backup
