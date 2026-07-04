@@ -1,0 +1,125 @@
+# 👨‍💻 Engenharia do Projeto
+
+## Filosofia
+
+O código deverá ser simples de entender.
+
+Não escrever código para impressionar.
+
+Escrever código para durar.
+
+---
+
+# Estrutura
+
+Cada pasta possui apenas uma responsabilidade.
+
+---
+
+# Commits
+
+Sempre pequenos.
+
+Sempre objetivos.
+
+Sempre seguindo Conventional Commits.
+
+---
+
+# Git
+
+Nunca trabalhar diretamente sem commits frequentes.
+
+Cada etapa importante gera um commit.
+
+---
+
+# Código
+
+Funções pequenas.
+
+Responsabilidade única.
+
+Baixo acoplamento.
+
+Alta coesão.
+
+---
+
+# Providers
+
+Cada Provider possui sua própria implementação.
+
+Nunca compartilhar lógica entre Providers.
+
+---
+
+# Logs
+
+Toda operação importante deverá gerar log.
+
+---
+
+# Auditoria
+
+Toda consulta deverá possuir protocolo.
+
+Toda consulta deverá ser rastreável.
+
+---
+
+# Testes
+
+Toda regra crítica deverá possuir:
+
+Teste unitário.
+
+Teste integração.
+
+Teste via Insomnia.
+
+---
+
+# Segurança
+
+Nunca confiar em dados externos.
+
+Sempre validar entradas.
+
+Nunca expor informações sensíveis.
+
+---
+
+# Performance
+
+Nunca otimizar prematuramente.
+
+Medir primeiro.
+
+Otimizar depois.
+
+---
+
+# Organização
+
+Arquitetura sempre terá prioridade sobre velocidade.
+
+---
+
+# Qualidade
+
+Todo código deve responder:
+
+Por que existe?
+
+Qual problema resolve?
+
+Como evolui?
+
+---
+
+# Nosso lema
+
+Arquitetura primeiro.
+
+Código depois.
