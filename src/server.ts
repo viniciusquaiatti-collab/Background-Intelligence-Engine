@@ -10,7 +10,7 @@ async function bootstrap() {
       host: "0.0.0.0",
     });
 
-    app.log.info(`🚀 Background Intelligence Engine iniciado na porta ${env.port}`);
+    app.log.info(`Background Intelligence Engine iniciado na porta ${env.port}`);
   } catch (error) {
     app.log.error(error);
 

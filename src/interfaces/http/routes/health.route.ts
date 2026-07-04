@@ -1,5 +1,4 @@
-import { FastifyInstance } from "fastify";
-import { timeStamp } from "node:console";
+import type { FastifyInstance } from "fastify";
 
 export async function healthRoutes(app: FastifyInstance) {
   app.get("/health", async () => {
@@ -7,7 +6,7 @@ export async function healthRoutes(app: FastifyInstance) {
       status: "ok",
       service: "background-intelligence-engine",
       uptime: process.uptime(),
-      timeStamp: new Date().toDateString(),
+      timestamp: new Date().toISOString(),
     };
   });
 }
