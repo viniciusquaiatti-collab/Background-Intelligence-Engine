@@ -15,13 +15,27 @@ describe("GET /health", () => {
   });
 
   it("returns service health information", async () => {
-    const response = await request(app.server).get("/health").expect(200);
+    const response = await request(app.server)
+      .get("/health")
+      .set("x-correlation-id", "test-correlation-id")
+      .expect(200);
 
     expect(response.body).toEqual({
-      status: "ok",
-      service: "background-intelligence-engine",
-      uptime: expect.any(Number),
-      timestamp: expect.any(String),
+      success: true,
+      data: {
+        status: "ok",
+        service: "background-intelligence-engine",
+        uptime: expect.any(Number),
+        timestamp: expect.any(String),
+      },
+      meta: {
+        requestId: expect.any(String),
+        correlationId: "test-correlation-id",
+        timestamp: expect.any(String),
+      },
     });
+
+    expect(response.headers["x-request-id"]).toEqual(expect.any(String));
+    expect(response.headers["x-correlation-id"]).toBe("test-correlation-id");
   });
 });
