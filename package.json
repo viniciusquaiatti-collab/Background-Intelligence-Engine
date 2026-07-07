@@ -36,7 +36,8 @@
   "dependencies": {
     "dotenv": "^17.4.2",
     "fastify": "^5.9.0",
-    "pino": "^10.3.1"
+    "pino": "^10.3.1",
+    "zod": "^4.4.3"
   },
   "lint-staged": {
     "*.{ts,js,mjs,cjs,json,md}": [
